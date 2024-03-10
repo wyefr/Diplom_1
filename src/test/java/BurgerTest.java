@@ -6,10 +6,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 import praktikum.*;
-
-import java.util.Arrays;
 import java.util.List;
-
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -25,7 +22,7 @@ public class BurgerTest {
     Ingredient ingredient3;
     @Mock
     Database database;
-    private final List<Bun> buns = Arrays.asList(new Bun("black bun", 100.50F));
+    private final List<Bun> buns = List.of(new Bun("black bun", 100.50F));
 
     @Before
     public void setDefaultBun() {

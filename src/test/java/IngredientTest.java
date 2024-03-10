@@ -6,9 +6,9 @@ import praktikum.IngredientType;
 import static org.hamcrest.CoreMatchers.equalTo;
 public class IngredientTest {
     private Ingredient ingredient;
-    private IngredientType expectedIngredientType = IngredientType.SAUCE;
-    private String expectedName = "sauceName";
-    private float expectedPrice = 50f;
+    private final IngredientType expectedIngredientType = IngredientType.SAUCE;
+    private final String expectedName = "sauceName";
+    private final float expectedPrice = 50f;
     @Before
     public void prepareData() {
         this.ingredient = new Ingredient(
